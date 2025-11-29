@@ -48,7 +48,7 @@
 .nav a svg {
   font-size: 0.7rem;
   margin-left: 0.5rem;              /* ✅ spacing between text and arrow */
-  color: #BFBFBF;
+  color: #3B3835;
   transform: translateY(1px);       /* ✅ vertical alignment tweak */
   pointer-events: none;
 }
