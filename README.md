@@ -45,12 +45,11 @@ Screenshots demonstrate both **TailwindCSS utility styling** and **external CSS 
 
 
 
-## 📂 Project Structure
+##  Project Structure
 
-The Supivaa frontend follows a clean, modular structure that combines **React + TypeScript** components with **TailwindCSS utilities** and **external CSS files** for fine‑grained styling. 
+The Supivaa frontend follows a clean, modular structure that combines **React + TypeScript** components with **TailwindCSS utilities** and **external CSS files** for fine‑grained styling.
 
-```plaintext 
-
+     ```plaintext
 
 Supivaa_frontend/
 ├── public/                # Static assets (favicon, manifest, etc.)
@@ -68,7 +67,7 @@ Supivaa_frontend/
 ├── tsconfig.node.json     # TypeScript config for Node/Vite setup
 └── README.md              # Project documentation
 
-
+      
 ##  Performance Highlights
 
 Supivaa’s frontend is optimized for speed, scalability, and accessibility.  
@@ -106,7 +105,7 @@ The project uses **React + TypeScript**, styled with **TailwindCSS** and **exter
 ### Installation
 Clone the repository and install dependencies:
 
-<!-- ```bash -->
+    ```bash
 
 git clone https://github.com/Alex-gikungu/Supivaa_frontend.git
 cd Supivaa_frontend
@@ -117,15 +116,16 @@ npm install
 ### Development
 Run the local dev server:
 
-<!-- ```bash -->
-npm run dev
+    ```bash
+    npm run dev
+    ```
 
 ### Build
 Generate a production build:
 
-<!-- ```bash -->
-npm run build
-
+    ```bash
+    npm run build
+    ```
 
 ##  Deployment
 
@@ -168,8 +168,9 @@ Tests cover **React + TypeScript components**, styling consistency with **Tailwi
 ### Running Tests
 Execute the test suite with:
 
-<!-- ```bash -->
-npm run test
+    ```bash
+    npm run test
+    ```
 
 
 ## License
