@@ -45,9 +45,11 @@ Screenshots demonstrate both **TailwindCSS utility styling** and **external CSS 
 
 
 
-##  Project Structure
+## 📂 Project Structure
 
-The Supivaa frontend follows a clean, modular structure that combines **React + TypeScript** components with **TailwindCSS utilities** and **external CSS files** for fine‑grained styling.
+The Supivaa frontend follows a clean, modular structure that combines **React + TypeScript** components with **TailwindCSS utilities** and **external CSS files** for fine‑grained styling. 
+
+```plaintext 
 
 
 Supivaa_frontend/
