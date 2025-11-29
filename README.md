@@ -58,8 +58,8 @@ The Supivaa frontend follows a clean, modular structure that combines **React + 
 Supivaa’s frontend is optimized for speed, scalability, and accessibility.  
 By combining **TailwindCSS utilities** with **external CSS styling**, the site achieves both rapid builds and pixel‑perfect polish.
 
-       - ** Vite Bundling**  
-       Lightning‑fast dev server and optimized production builds.
+- #### Vite Bundling ####  
+  Lightning‑fast dev server and optimized production builds.
 
 - ** Code Splitting**  
   Only loads what’s needed per route, improving performance and reducing bundle size.
