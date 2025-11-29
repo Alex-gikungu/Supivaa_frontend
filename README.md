@@ -61,19 +61,19 @@ By combining **TailwindCSS utilities** with **external CSS styling**, the site a
 - #### Vite Bundling ####  
   Lightning‑fast dev server and optimized production builds.
 
-- ** Code Splitting**  
+- #### Code Splitting####  
   Only loads what’s needed per route, improving performance and reducing bundle size.
 
-- ** Image Optimization**  
+- #### Image Optimization####  
   Responsive image sizes, `object-fit` usage, and lazy loading for faster page rendering.
 
-- ** CSS Optimization**  
+- #### CSS Optimization####  
   Tailwind purge removes unused styles, while external CSS ensures fine‑grained control.
 
-- ** Accessibility Checks**  
+- #### Accessibility Checks####  
   Keyboard navigation, ARIA attributes, and screen reader support built into components.
 
-- ** Smooth Interactivity**  
+- #### Smooth Interactivity####  
   Subtle hover effects, scroll‑in animations, and responsive dropdown menus for engaging UX.
 
 
