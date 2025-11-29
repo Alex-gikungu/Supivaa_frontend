@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.25rem 2rem;
-  background-color: #F7F5F3; /* light neutral background */
+  background-color: #F7F5F3;
   font-family: 'Inter', sans-serif;
   border-bottom: 1px solid #D3DEDC;
   position: sticky;
@@ -24,13 +24,15 @@
 }
 
 .nav a {
+  display: inline-flex;              /* ✅ align text + icon */
+  align-items: center;
+  line-height: 1.2;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
   color: #3B3835;
   padding: 0.5rem 0;
   transition: color 0.2s ease;
-  position: relative;
 }
 
 .nav a:hover {
@@ -42,12 +44,21 @@
   font-weight: 600;
 }
 
-/* Dropdown arrows */
-.nav a::after {
-  content: attr(data-arrow);
-  font-size: 0.75rem;
-  margin-left: 0.25rem;
+/* ✅ Style dropdown icons inside links */
+.nav a svg {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;              /* ✅ spacing between text and arrow */
   color: #BFBFBF;
+  transform: translateY(1px);       /* ✅ vertical alignment tweak */
+  pointer-events: none;
+}
+
+.nav a:hover svg {
+  color: #BFBFBF;
+}
+
+.nav a.active svg {
+  color: #D4AE97;
 }
 
 /* Search icon */
@@ -69,7 +80,6 @@
 /* 📱 Responsive Media Queries */
 /* ========================= */
 
-/* Tablets and small laptops */
 @media (max-width: 1024px) {
   .header {
     padding: 1rem 1.5rem;
@@ -79,10 +89,9 @@
   }
 }
 
-/* Mobile devices */
 @media (max-width: 768px) {
   .header {
-    flex-direction: column; /* stack logo and nav */
+    flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
   }
@@ -90,7 +99,7 @@
     height: 40px;
   }
   .nav {
-    flex-direction: column; /* stack nav links vertically */
+    flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
     width: 100%;
@@ -106,7 +115,6 @@
   }
 }
 
-/* Extra small devices (phones <480px) */
 @media (max-width: 480px) {
   .header {
     padding: 0.75rem 1rem;
