@@ -104,8 +104,8 @@ npm install
 ### Development
 Run the local dev server:
 
-     ```bash
-     ```
+     <!-- ```bash
+     ``` -->
      npm run dev
      
    
