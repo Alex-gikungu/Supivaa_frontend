@@ -13,7 +13,7 @@ function Partners() {
   const [partners, setPartners] = useState<Partner[]>([]);
 
   useEffect(() => {
-    // ✅ Fetch only logos (exclude stories) from Laravel backend
+    
     fetch("http://127.0.0.1:8000/api/trusted-partners")
       .then((res) => res.json())
       .then((data) => setPartners(data))

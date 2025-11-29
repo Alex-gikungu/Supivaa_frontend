@@ -16,7 +16,7 @@ function Team() {
   const [teamMembers, setTeamMembers] = useState<Person[]>([]);
 
   useEffect(() => {
-    // Fetch team members directly from Laravel backend
+    
     fetch("http://127.0.0.1:8000/api/team-members")
       .then((res) => res.json())
       .then((data) => setTeamMembers(data))
@@ -24,7 +24,7 @@ function Team() {
   }, []);
 
   const renderCard = (person: Person, index: number) => {
-    // Ensure image path is correct
+   
     const imageUrl = person.image.startsWith("/images")
       ? `http://127.0.0.1:8000${person.image}`
       : `http://127.0.0.1:8000/images/${person.image}`;

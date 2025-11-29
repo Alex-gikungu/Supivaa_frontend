@@ -21,7 +21,7 @@ function OurStory() {
     return <p>Loading...</p>;
   }
 
-  // Defensive check: only build URL if story_image exists
+  
   let storyUrl = "";
   if (about.story_image) {
     storyUrl = about.story_image.startsWith("/images")

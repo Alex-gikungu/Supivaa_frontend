@@ -12,10 +12,10 @@ type Partner = {
 
 const TrustedPartners = () => {
   const [partners, setPartners] = useState<Partner[]>([]);
-  const [startIndex, setStartIndex] = useState(0); // track carousel position
+  const [startIndex, setStartIndex] = useState(0); 
 
   useEffect(() => {
-    // ✅ Fetch only the first 8 logos from the dedicated endpoint
+    
     fetch("http://127.0.0.1:8000/api/trusted-partners")
       .then((res) => res.json())
       .then((data) => setPartners(data))
@@ -39,7 +39,7 @@ const TrustedPartners = () => {
     );
   };
 
-  // Show 4 logos at a time
+
   const visiblePartners = partners.slice(startIndex, startIndex + 4);
 
   const handlePrev = () => {

@@ -5,7 +5,7 @@ type ApproachStep = {
   id: number;
   title: string;
   description: string;
-  image: string | null;       // backend may return null
+  image: string | null;      
   badge_color: string;
 };
 
@@ -20,8 +20,7 @@ const IntegratedApproach = () => {
   }, []);
 
   const renderCard = (step: ApproachStep) => {
-    // Defensive check + fallback
-    let imageUrl = "http://127.0.0.1:8000/images/default.png"; // fallback image
+    let imageUrl = "http://127.0.0.1:8000/images/default.png";
     if (step.image) {
       imageUrl = step.image.startsWith("/images")
         ? `http://127.0.0.1:8000${step.image}`

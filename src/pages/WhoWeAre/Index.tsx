@@ -1,4 +1,3 @@
-// import "../../styles/WhoWeAre.css"; // optional: global styles for Who We Are page
 
 import About from "./About";
 import OurStory from "./OurStory";
@@ -6,7 +5,7 @@ import MissionVision from "./MissionVision";
 import Values from "./Values";
 import Team from "./Team";
 import Partners from "./Partners";
-import WorkWithUs from "./WorkWithUs"; // ✅ newly added final section
+import WorkWithUs from "./WorkWithUs";
 
 const WhoWeArePage = () => {
   return (
@@ -17,7 +16,7 @@ const WhoWeArePage = () => {
       <Values />
       <Team />
       <Partners />
-      <WorkWithUs /> {/* ✅ renders final call-to-action section */}
+      <WorkWithUs />
     </main>
   );
 };

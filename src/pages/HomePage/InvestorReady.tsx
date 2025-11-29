@@ -1,4 +1,4 @@
-import "../../styles/Home/InvestorReady.css"; // ✅ new file with renamed classes
+import "../../styles/Home/InvestorReady.css"; 
 
 const InvestorReady = () => {
   return (

@@ -3,11 +3,11 @@ import "../../styles/Home/PartnershipStories.css";
 
 type Story = {
   id: number;
-  name: string;        // Partner name (Darley, MEDA, CheckUps COVA)
-  sector: string;      // Agriculture, Healthcare, Financial Institutions
-  description: string; // Story text
-  image: string;       // Path from backend (e.g. /images/darley.jpeg)
-  alt_text: string;    // Accessibility alt text
+  name: string;        
+  sector: string;      
+  description: string; 
+  image: string;      
+  alt_text: string;    
 };
 
 const PartnershipStories = () => {
@@ -21,7 +21,7 @@ const PartnershipStories = () => {
   }, []);
 
   const renderCard = (story: Story) => {
-    // Build full image URL
+    
     const imageUrl = story.image.startsWith("/images")
       ? `http://127.0.0.1:8000${story.image}`
       : `http://127.0.0.1:8000/images/${story.image}`;

@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import "../styles/Header.css";
 import logo from "../assets/images/logo.jpeg";
 
-// ✅ Import icons
 import { FaSearch } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
 

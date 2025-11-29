@@ -8,7 +8,7 @@ type ApproachStep = {
 };
 
 type WhatWeDoData = {
-  approach_intro?: string;       // ✅ add intro paragraph
+  approach_intro?: string;      
   approach_steps?: ApproachStep[];
 };
 

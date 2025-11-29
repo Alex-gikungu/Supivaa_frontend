@@ -8,7 +8,7 @@ type DifferentPoint = {
 
 type WhatWeDoData = {
   different_title: string;
-  different_points?: DifferentPoint[]; // optional to prevent crash
+  different_points?: DifferentPoint[];
   different_image: string;
 };
 
