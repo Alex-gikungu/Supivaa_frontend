@@ -1,0 +1,127 @@
+.about-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(90deg, #ffffff 0%, #f5eee8 100%);
+  color: #3B3835;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* vertically center image and text */
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 320px;
+  height: 100%;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about-text-area {
+  flex: 2;
+}
+
+.about-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #3B3835; 
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.about-subtitle {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #3B3835;
+  margin-bottom: 2rem;
+}
+
+.about-description {
+  font-size: 1.25rem;
+  line-height: 2;
+  color: rgba(59, 56, 53, 0.8);
+  margin-bottom: 1.5rem;
+}
+
+.supivaa-accent {
+  color: #D4AE97;
+  font-weight: 600;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
+  .about-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  .about-wrapper {
+    gap: 2.5rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 1.5rem;
+  }
+  .about-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .about-image-area {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  .about-title {
+    font-size: 1.75rem;
+  }
+  .about-subtitle {
+    font-size: 1.3rem;
+  }
+  .about-description {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+  .about-title {
+    font-size: 1.5rem;
+  }
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+  .about-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

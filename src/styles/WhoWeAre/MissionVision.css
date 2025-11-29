@@ -1,0 +1,113 @@
+.mission-vision-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #f5eee8 0%, #fdfaf7 100%);
+  font-family: 'Inter', sans-serif;
+  color: #3B3835;
+}
+
+.mission-vision-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  flex: 1 1 480px;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #3B3835;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgba(59, 56, 53, 0.85);
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .mission-vision-section {
+    padding: 4rem 1.5rem;
+  }
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 1.75rem;
+  }
+  .card-title {
+    font-size: 1.6rem;
+  }
+  .card-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .mission-vision-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .card-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-title {
+    font-size: 1.4rem;
+  }
+  .card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  .mission-vision-section {
+    padding: 2.5rem 1rem;
+  }
+  .card {
+    padding: 1.25rem;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

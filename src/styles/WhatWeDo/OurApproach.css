@@ -1,0 +1,121 @@
+.approach-section {
+  padding: 5rem 2rem;
+  background-color: #F7F5F3; /* soft neutral background */
+  font-family: 'Inter', sans-serif;
+  color: #3B3835;
+}
+
+.approach-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.approach-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #3B3835;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* desktop horizontal layout */
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.approach-card {
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 2rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.step-number {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #D4AE97;
+  margin-bottom: 0.5rem;
+}
+
+.step-title {
+  font-size: 1rem; /* fixed typo */
+  font-weight: 300;
+  color: #3B3835;
+  margin-bottom: 0.5rem;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: rgba(59, 56, 53, 0.85);
+  line-height: 1.6;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .approach-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .approach-title {
+    font-size: 2rem;
+  }
+  .step-number {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .approach-section {
+    padding: 3rem 1.5rem;
+  }
+  .approach-title {
+    font-size: 1.75rem;
+  }
+  .approach-grid {
+    grid-template-columns: 1fr; /* stack cards vertically */
+    gap: 1.5rem;
+  }
+  .approach-card {
+    text-align: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  .step-number {
+    font-size: 2.5rem;
+  }
+  .step-title {
+    font-size: 0.95rem;
+  }
+  .step-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  .approach-section {
+    padding: 2rem 1rem;
+  }
+  .approach-title {
+    font-size: 1.5rem;
+  }
+  .step-number {
+    font-size: 2rem;
+  }
+  .step-title {
+    font-size: 0.9rem;
+  }
+  .step-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}

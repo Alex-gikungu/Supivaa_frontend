@@ -1,0 +1,142 @@
+.values-section {
+  padding: 5rem 2rem;
+  background: linear-gradient(180deg, #fdfaf7 0%, #f5eee8 100%);
+  font-family: 'Inter', sans-serif;
+  color: #3B3835;
+}
+
+.values-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.values-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #3B3835;
+  margin-bottom: 1rem;
+}
+
+.values-subtitle {
+  font-size: 1.25rem;
+  color: rgba(59, 56, 53, 0.8);
+}
+
+/* Horizontal layout for 4 cards */
+.values-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+
+.value-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 260px; /* reduced from 280px to fit all 4 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.value-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+.value-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #D4AE97;
+  margin-bottom: 0.75rem;
+}
+
+.value-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(59, 56, 53, 0.85);
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .values-grid {
+    flex-wrap: wrap;       /* allow wrapping */
+    justify-content: center;
+  }
+  .value-card {
+    max-width: 45%;        /* 2 cards per row */
+    flex: 1 1 45%;
+  }
+  .values-title {
+    font-size: 2.2rem;
+  }
+  .values-subtitle {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .values-section {
+    padding: 3rem 1.5rem;
+  }
+  .values-title {
+    font-size: 1.8rem;
+  }
+  .values-subtitle {
+    font-size: 1rem;
+  }
+  .values-grid {
+    flex-direction: column; /* stack cards vertically */
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .value-card {
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .value-title {
+    font-size: 1.2rem;
+  }
+  .value-text {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  .values-section {
+    padding: 2rem 1rem;
+  }
+  .values-title {
+    font-size: 1.5rem;
+  }
+  .values-subtitle {
+    font-size: 0.9rem;
+  }
+  .value-title {
+    font-size: 1rem;
+  }
+  .value-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  .value-icon {
+    width: 40px;
+    height: 40px;
+  }
+}

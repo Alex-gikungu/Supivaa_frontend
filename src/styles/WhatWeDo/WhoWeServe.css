@@ -1,0 +1,141 @@
+.serve-section {
+  padding: 5rem 2rem;
+  background-color: #FDF9F5; /* soft neutral backdrop */
+  font-family: 'Inter', sans-serif;
+  color: #3B3835;
+}
+
+.serve-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.serve-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #3B3835;
+}
+
+.serve-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.serve-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.serve-icon img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.serve-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #3B3835;
+  margin-bottom: 0.75rem;
+}
+
+.serve-card-description {
+  font-size: 1rem;
+  color: rgba(59, 56, 53, 0.85);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.serve-link {
+  font-size: 1rem;
+  color: #8BAAAB; /* teal accent */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.serve-link:hover {
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .serve-title {
+    font-size: 2rem;
+  }
+  .serve-card {
+    padding: 1.75rem;
+  }
+  .serve-card-title {
+    font-size: 1.15rem;
+  }
+  .serve-card-description {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .serve-section {
+    padding: 3rem 1.5rem;
+  }
+  .serve-grid {
+    grid-template-columns: 1fr; /* stack cards vertically */
+    gap: 2rem;
+  }
+  .serve-card {
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  .serve-icon img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .serve-title {
+    font-size: 1.6rem;
+  }
+  .serve-card-title {
+    font-size: 1.05rem;
+  }
+  .serve-card-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  .serve-section {
+    padding: 2rem 1rem;
+  }
+  .serve-title {
+    font-size: 1.4rem;
+  }
+  .serve-card {
+    padding: 1.25rem;
+  }
+  .serve-card-title {
+    font-size: 1rem;
+  }
+  .serve-card-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  .serve-link {
+    font-size: 0.9rem;
+  }
+}

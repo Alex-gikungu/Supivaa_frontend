@@ -1,0 +1,160 @@
+.whatwedo-section {
+  padding: 5rem 2rem;
+  background-color: #F5EEE8; /* soft beige background */
+  font-family: 'Inter', sans-serif;
+  color: #3B3835;
+}
+
+.whatwedo-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 3rem;
+}
+
+.whatwedo-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.whatwedo-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #3B3835;
+  margin-bottom: 1rem;
+}
+
+.whatwedo-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: rgba(59, 56, 53, 0.85);
+  margin-bottom: 2rem;
+}
+
+.whatwedo-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: #D4AE97;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  color: #D4AE97;
+  border: 2px solid #D4AE97;
+  padding: 0.75rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #364153;
+  color: #ffffff;
+}
+
+.btn-secondary:hover {
+  background-color: #F5EEE8;
+  color: #D4AE97;
+}
+
+.whatwedo-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.whatwedo-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .whatwedo-title {
+    font-size: 2rem;
+  }
+  .whatwedo-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.75rem;
+  }
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.95rem;
+    padding: 0.65rem 1.5rem;
+  }
+  .whatwedo-image img {
+    max-width: 90%;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .whatwedo-section {
+    padding: 3rem 1.5rem;
+  }
+  .whatwedo-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .whatwedo-text {
+    text-align: center;
+  }
+  .whatwedo-title {
+    font-size: 1.6rem;
+  }
+  .whatwedo-description {
+    font-size: 1rem;
+  }
+  .whatwedo-buttons {
+    justify-content: center;
+    flex-direction: column; /* stack buttons vertically */
+    gap: 0.75rem;
+  }
+  .btn-primary,
+  .btn-secondary {
+    width: 100%; /* full width buttons for easy tapping */
+    text-align: center;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  .whatwedo-section {
+    padding: 2rem 1rem;
+  }
+  .whatwedo-title {
+    font-size: 1.4rem;
+  }
+  .whatwedo-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  .btn-primary,
+  .btn-secondary {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.25rem;
+  }
+}

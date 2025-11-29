@@ -1,0 +1,134 @@
+.different-section {
+  padding: 5rem 2rem;
+  background-color: #FDF9F5; /* soft neutral background */
+  font-family: 'Inter', sans-serif;
+  color: #3B3835;
+}
+
+.different-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.different-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.different-title {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #3B3835;
+  margin-bottom: 2rem;
+}
+
+.different-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.different-item {
+  margin-bottom: 2rem;
+}
+
+.item-title {
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: #3B3835;
+  margin-bottom: 0.5rem;
+}
+
+.item-description {
+  font-size: 1rem;
+  color: rgba(59, 56, 53, 0.85);
+  line-height: 1.6;
+}
+
+.different-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.different-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .different-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  .item-title {
+    font-size: 1.15rem;
+  }
+  .item-description {
+    font-size: 0.95rem;
+  }
+  .different-image img {
+    max-width: 400px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .different-section {
+    padding: 3rem 1.5rem;
+  }
+  .different-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .different-text {
+    text-align: center;
+  }
+  .different-title {
+    font-size: 1.4rem;
+  }
+  .item-title {
+    font-size: 1.05rem;
+  }
+  .item-description {
+    font-size: 0.9rem;
+  }
+  .different-image img {
+    max-width: 100%;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  .different-section {
+    padding: 2rem 1rem;
+  }
+  .different-title {
+    font-size: 1.25rem;
+  }
+  .item-title {
+    font-size: 1rem;
+  }
+  .item-description {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  .different-image img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}

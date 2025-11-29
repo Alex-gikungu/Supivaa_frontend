@@ -1,0 +1,135 @@
+.intent-impact-section {
+  background-color: #fff;
+  padding: 4rem 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.intent-impact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.intent-impact-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intent-impact-challenge {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.intent-impact-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #364153;
+  margin-bottom: 1rem;
+}
+
+.intent-impact-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #3B3835;
+}
+
+.intent-impact-right {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.impact-stat {
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.impact-stat.teal {
+  background-color: #8BAAAB;
+}
+
+.impact-stat.peach {
+  background-color: #D4AC95;
+}
+
+.impact-value {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* ========================= */
+/* 📱 Responsive Media Queries */
+/* ========================= */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+  .intent-impact-heading {
+    font-size: 1.6rem;
+  }
+  .intent-impact-paragraph {
+    font-size: 1rem;
+  }
+  .impact-value {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .intent-impact-section {
+    padding: 3rem 1.5rem;
+  }
+  .intent-impact-container {
+    flex-direction: column; /* stack left and right */
+    align-items: center;
+  }
+  .intent-impact-left,
+  .intent-impact-right {
+    width: 100%;
+    min-width: unset;
+  }
+  .intent-impact-heading {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .intent-impact-paragraph {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .impact-stat {
+    text-align: center;
+    padding: 1.25rem;
+  }
+  .impact-value {
+    font-size: 1.6rem;
+  }
+}
+
+/* Extra small devices (phones <480px) */
+@media (max-width: 480px) {
+  .intent-impact-section {
+    padding: 2rem 1rem;
+  }
+  .intent-impact-heading {
+    font-size: 1.2rem;
+  }
+  .intent-impact-paragraph {
+    font-size: 0.9rem;
+  }
+  .impact-value {
+    font-size: 1.4rem;
+  }
+}
